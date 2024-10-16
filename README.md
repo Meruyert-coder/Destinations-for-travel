@@ -1,1 +1,1 @@
-# Destinations-for-travel
+# A web application that allows users to select countries of interest and obtain information about them using data from an external API. The application provides information about the selected country, such as its name in Russian, flag, continent, population, capital, and languages
