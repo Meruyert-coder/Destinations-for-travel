@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Направления для путешествий</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 2.5rem;
+        }
+
+        p {
+            color: #666;
+            margin: 10px 0 40px;
+            font-size: 1.1rem;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        .card-button {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #007BFF;
+            border-radius: 10px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .card-button:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Направления, вдохновляющие на приключения</h1>
+    <p>Просмотрите темы и выберите направление</p>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="/image/georgia_3.jpg" alt="Грузия">
+            <div class="card-title">Грузия</div>
+            <a href="country.html?name=Georgia" class="card-button">Более</a>
+        </div>
+
+        <div class="card">
+            <img src="/image/tivat.jpg" alt="Кипр">
+            <div class="card-title">Кипр</div>
+            <a href="country.html?name=Cyprus" class="card-button">Более</a>
+        </div>
+
+        <div class="card">
+            <img src="/image/болгария.jpg" alt="Болгария">
+            <div class="card-title">Болгария</div>
+            <a href="country.html?name=Bulgaria" class="card-button">Более</a>
+        </div>
+
+        <div class="card">
+            <img src="/image/греция.jpg" alt="Греция">
+            <div class="card-title">Греция</div>
+            <a href="country.html?name=Greece" class="card-button">Более</a>
+        </div>
+    </div>
+
+    <script src="/java script/country.js"></script>
+</body>
+</html>
